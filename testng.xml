@@ -5,6 +5,8 @@
       <class name="Dummy_API_Test_Cases.TC_01_Get_emp"/>
       <class name="Dummy_API_Test_Cases.TC_02_Get_Specific_emp"/>
       <class name="Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp"/>
+      <class name="Dummy_API_Test_Cases.TC_06_Test_CRUD_Pet_Store"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

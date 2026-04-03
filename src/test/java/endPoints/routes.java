@@ -15,5 +15,17 @@ public class routes {
 	public static String DELETE_EMPLOYEE = "/delete/{id}";
 	
 	
+	
+	//Pet Store base url
+	
+	public static String base_url_pet = "https://petstore.swagger.io/v2";
+	
+	
+	//user module urls
+	public static String  post_url_pet = base_url_pet + "/user";
+	public static String  get_url_pet = base_url_pet + "/user/{username}";
+	public static String  put_url_pet = base_url_pet + "/user/{username}";
+	public static String  del_url_pet = base_url_pet + "/user/{username}";
+	
 
 }
