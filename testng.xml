@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Dummy_API_Test_Cases.TC_01_Get_emp"/>
+      <class name="Dummy_API_Test_Cases.TC_02_Get_Specific_emp"/>
+      <class name="Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

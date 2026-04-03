@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 18.594 s <<< FAILURE! - in TestSuite
+testGetSpecificEmployee(Dummy_API_Test_Cases.TC_02_Get_Specific_emp)  Time elapsed: 1.255 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <429>.
+
+	at Dummy_API_Test_Cases.TC_02_Get_Specific_emp.testGetSpecificEmployee(TC_02_Get_Specific_emp.java:29)
+
+testCreateEmployee(Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp)  Time elapsed: 12.186 s  <<< FAILURE!
+java.lang.AssertionError: Create API failed after retries
+	at Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp.sendCreateRequestWithRetry(TC_03_04_05_Create_Update_Delete_emp.java:119)
+	at Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp.testCreateEmployee(TC_03_04_05_Create_Update_Delete_emp.java:39)
+
+testUpdateEmployee(Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Employee ID not created.
+	at Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp.testUpdateEmployee(TC_03_04_05_Create_Update_Delete_emp.java:57)
+
+testDeleteEmployee(Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Employee ID not available for deletion.
+	at Dummy_API_Test_Cases.TC_03_04_05_Create_Update_Delete_emp.testDeleteEmployee(TC_03_04_05_Create_Update_Delete_emp.java:85)
+
