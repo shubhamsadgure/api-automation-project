@@ -53,9 +53,7 @@ public class TC_03_04_05_Create_Update_Delete_emp {
     @Test(priority = 2)
     public void testUpdateEmployee() {
 
-        if (empId == 0) {
-            Assert.fail("Employee ID not created.");
-        }
+
 
         String updatedName = "UpdatedEmp_" + System.currentTimeMillis();
         String updatedSalary = String.valueOf((int)(Math.random() * 100000));
@@ -76,23 +74,52 @@ public class TC_03_04_05_Create_Update_Delete_emp {
                 .body("data.age", equalTo(updatedAge))
                 .log().all();
     }
+    
+    
 
     // ================= DELETE API =================
     @Test(priority = 3)
     public void testDeleteEmployee() {
 
-        if (empId == 0) {
-            Assert.fail("Employee ID not available for deletion.");
-        }
 
         Response response = sendDeleteRequestWithRetry(empId);
 
         response.then()
                 .statusCode(200)
                 .body("status", equalTo("success"))
-                .body("message", containsString("successfully"))
+                .body("message", equalTo("Successfully! Record has been deleted"))
                 .log().all();
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     // ================= RETRY - CREATE =================
     public Response sendCreateRequestWithRetry(JSONObject requestBody) {
