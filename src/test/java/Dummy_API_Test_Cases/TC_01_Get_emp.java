@@ -11,13 +11,9 @@ import org.testng.annotations.Test;
 import endPoints.routes;
 import io.restassured.RestAssured;
 
-public class TC_01_Get_emp {
+public class TC_01_Get_emp extends BaseTest {
 	
-	@BeforeClass
-    public void setup() {
-        RestAssured.baseURI = routes.base_url;
-    }
-    
+
 
     @Test
     public void testGetAllEmployees() {

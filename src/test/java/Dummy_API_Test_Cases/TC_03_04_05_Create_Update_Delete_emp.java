@@ -13,15 +13,11 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class TC_03_04_05_Create_Update_Delete_emp {
+public class TC_03_04_05_Create_Update_Delete_emp extends BaseTest {
 
     // ✅ Global ID
     public static int empId;
 
-    @BeforeClass
-    public void setup() {
-        RestAssured.baseURI = routes.base_url;
-    }
 
     // ================= CREATE API =================
     @Test(priority = 1)
@@ -90,6 +86,26 @@ public class TC_03_04_05_Create_Update_Delete_emp {
                 .body("message", equalTo("Successfully! Record has been deleted"))
                 .log().all();
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
